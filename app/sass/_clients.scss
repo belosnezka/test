@@ -1,0 +1,37 @@
+#clients{
+  padding: 122px 0 124px;
+  background: #f4f5f9;
+  .grid__row{
+    justify-content: center;
+  }
+  .item{
+    display: inline-block;
+    position: relative;
+    width: 210px;
+    height: 103px;
+    transition: all 1s ease;
+    margin: 0 11px 11px;
+    img{
+      transition: all 1s ease;
+      position: absolute;
+      &.start{
+        opacity: 1;
+      }
+      &.hover{
+        opacity: 0;
+      }
+    }
+    &:hover{
+      transition: all 1s ease;
+      img{
+        transition: all 1s ease;
+        &.start{
+          opacity: 0;
+        }
+        &.hover{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

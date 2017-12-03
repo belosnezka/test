@@ -1,0 +1,48 @@
+footer{
+  background: #202020;
+  padding: 35px 0;
+  .social{
+    a{
+      padding: 0 16px;
+      i{
+        color: #fff;
+        opacity: 0.7;
+        font-size: 25px;
+      }
+      &:first-child{
+        padding: 0 16px 0 0;
+      }
+      &:hover{
+        color:#e74c3c;
+      }
+    }
+  }
+  .copyright{
+    color:#999999;
+    text-align: right;
+  }
+  @media (max-width: 767px) {
+    text-align: center;
+    .social{
+      a{
+        i{
+          font-size: 16px;
+        }
+      }
+    }
+    .copyright{
+      margin: 10px 0 0;
+      text-align: center;
+    }
+  }
+  @media (max-width: 1200px){
+    text-align: center;
+    .social{
+      a{
+        i{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

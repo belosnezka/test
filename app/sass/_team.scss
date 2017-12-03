@@ -1,0 +1,130 @@
+#team{
+  background: url(../img/bg-team.jpg) no-repeat center;
+  background-size: cover;
+  padding: 123px 0 121px;
+  .header__title{
+    h2{
+      color: #fff;
+    }
+    p{
+      color:#f4f5f9;
+    }
+  }
+  .teams{
+    text-align: center;
+    display: flex;
+    margin-right:-15px;
+    margin-left: -15px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0 20px;
+    .team{
+      width: 150px;
+      color: #fff;
+      margin-bottom: 20px;
+      .team__start{
+        width: 58px;
+        height: 58px;
+        margin: 0 auto;
+        background: red;
+        padding: 4px;
+        border-radius: 50%;
+        position: relative;
+        img{
+          @include vam();
+          border-radius: 50%;
+        }
+      }
+      .team__hover{
+        display: block;
+        color: #fff;
+        .line{
+          width: 2px;
+          height: 25px;
+          background: rgba(255,255,255,0.75);
+          margin: 0 auto 22px;
+        }
+        .name{
+          font-family: "Open Sans", sans-serif;
+          font-size: 24px;
+          font-weight: 600;
+          color: #e74c3c;
+          margin: 0 0 8px;
+        }
+        .specialty{
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1240px) {
+    min-height: 742px;
+    position: relative;
+    padding: 123px 0 0;
+    .teams{
+      position: absolute;
+      width: 1170px;
+      height: 366px;
+      bottom: 0;
+      display: block !important;
+      .team{
+        position: absolute;
+        width: 150px;
+        .team__start{
+          transform: scale(1);
+          transition: all 1s ease;
+          z-index: 2;
+        }
+        .team__hover{
+          position: absolute;
+          opacity: 0;
+          width: 150px;
+          text-align: center;
+          transition: all 1s ease 0.2s;
+          top:0px;
+          z-index: 1;
+          .line{
+            height: 48px;
+            margin: 0 auto;
+          }
+        }
+        &:first-child{
+          top:58px;
+          left:0px;
+        }
+        &:nth-child(2){
+          top:17px;
+          left:233px
+        }
+        &:nth-child(3){
+          top:10px;
+          left:477px
+        }
+        &:nth-child(4){
+          top:43px;
+          left:755px
+        }
+        &:nth-child(5){
+          top:24px;
+          right:0px;
+        }
+        &:hover{
+          .team__start{
+            transition: all 1s ease;
+            transform: scale(1.1);
+          }
+          .team__hover{
+            transition: all 1s ease 0.2s;
+            opacity: 1;
+            top:58px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

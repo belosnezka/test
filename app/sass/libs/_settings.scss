@@ -1,0 +1,31 @@
+
+body{
+  font-family: $OpenSans;
+}
+
+/*flex 1170 width*/
+.grid__row{
+  display: flex;
+  margin-right:-15px;
+  margin-left: -15px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: 1199px) {
+    justify-content: space-around;
+  }
+}
+
+/*flex full width*/
+.grid{
+  .grid__row{
+    margin-right:0px;
+    margin-left: 0px;
+  }
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

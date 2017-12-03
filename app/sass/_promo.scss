@@ -1,0 +1,52 @@
+#promo{
+  background: url(../img/bg-promo.jpg);
+  background-size: cover;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  .section-overlay{
+    background: rgba(0,0,0,0.6);
+    padding: 151px 0 136px;
+    h3{
+      font-size: 36px;
+      color: #fff;
+      margin: 0 0 22px;
+      span{
+        font-weight: bold;
+      }
+    }
+    p{
+      font-size: 18px;
+      margin: 0 0 69px;
+    }
+    .btn{
+      display: inline-block;
+      font-family: "Open Sans", sans-serif;
+      width: 225px;
+      height: 56px;
+      line-height: 56px;
+      margin: 0 15px;
+      border:1px solid #fff;
+      border-radius: 1px;
+      background: transparent;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      letter-spacing: -1px;
+      outline: none;
+      text-decoration: none;
+      padding: 0;
+      transition: all 1s ease;
+      &:hover, &.active{
+        text-decoration: none;
+        background: #e74c3c;
+        border:1px solid #e74c3c;
+        transition: all 1s ease;
+      }
+    }
+  }
+}
+
+

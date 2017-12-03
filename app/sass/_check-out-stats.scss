@@ -1,0 +1,44 @@
+#check-out-stats{
+  background: url(../img/bg-check-out-stats.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 154px 0 127px;
+  .grid{
+    .grid__row{
+      .grid__item{
+        width: 150px;
+        .item{
+          text-align: center;
+          font-family: 'Source Sans Pro', sans-serif;
+          letter-spacing: 1.5px;
+          .icon{
+            width: 112px;
+            height: 112px;
+            border:1px solid #fff;
+            border-radius: 50%;
+            position: relative;
+            margin:0 auto 43px;
+            img{
+              position: absolute;
+              top:0;left:0;right:0;bottom:0;
+              margin: auto;
+            }
+          }
+          .count{
+            margin-bottom: 8px;
+            span{
+              font-size: 30px;
+              line-height: 30px;
+              font-weight: 700;
+            }
+          }
+          p{
+            font-size: 18px;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}

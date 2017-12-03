@@ -1,0 +1,95 @@
+#case-study{
+  padding: 144px 0 120px;
+  background: #f4f5f9;
+  .case-slider-block{
+    .case-slider{
+      outline: none;
+      .item{
+        position: relative;
+        min-height: 719px;
+        height: auto;
+        background-repeat: no-repeat;
+        background-position: right;
+        outline: none;
+        .description__block{
+          background: #fff;
+          position: absolute;
+          width: 100%;
+          min-height: 629px;
+          height: auto;
+          max-width: 665px;
+          text-align: center;
+          padding: 82px 67px;
+          .img{
+           margin: 0 auto 53px;
+            img{
+              display: inline;
+            }
+          }
+          .title{
+            font-family: "Open Sans", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color:#6a6a6a;
+            letter-spacing: 1.35px;
+            text-transform: uppercase;
+          }
+          .line{
+            width: 41px;
+            height: 1px;
+            text-align: center;
+            background: #888888;
+            margin: 0 auto 16px;
+          }
+          p{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 200;
+            margin-bottom: 48px;
+          }
+          .read_more{
+            display: block;
+            width: 144px;
+            height: 46px;
+            line-height: 46px;
+            border-radius: 1px;
+            background: #e74c3c;
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color:#fff;
+            text-transform: uppercase;
+            letter-spacing: 0.14px;
+            box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.25);
+            transition: all 1s ease;
+            text-decoration: none;
+            margin: 0 auto;
+            &:hover{
+              box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.1);
+              background: rgba(#e74c3c, 0.8);
+            }
+          }
+        }
+        @media (max-width:767px) {
+          background-color: #fff;
+          background-position: -665px;
+
+        }
+        @media (min-width:768px) and (max-width:1199px){
+          .description__block{
+            width: 60%;
+            margin: 30px 0;
+          }
+        }
+        @media (min-width:1200px) {
+          .description__block{
+            width: 665px;
+            margin: 47px 0;
+          }
+        }
+
+      }
+    }
+  }
+}
