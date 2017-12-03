@@ -1,7 +1,7 @@
 # test-M-Stream
 Тестовое задание M-Stream
 
-gulp watch - отслеживает измениния
+gulp watch - отслеживает измениний
 
 gulp build - соберет в папку 
 
